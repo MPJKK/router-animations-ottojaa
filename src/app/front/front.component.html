@@ -1,0 +1,17 @@
+<div class="margin">
+  <div class="gallery">
+    <div *ngFor="let media of mediaArray" class="li">
+      <mat-grid-list cols="2" rowHeight="3:1">
+        <mat-card class="card">
+          <img mat-card-image
+               [src]="mediaService.mediaUrl + (media.filename | thumbnail: 'medium') "
+               [alt]="media.title">
+          <mat-card-content>
+            <h3>{{ media.title }}</h3>
+            <p>{{ media.description }}</p>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-list>
+    </div>
+  </div>
+</div>

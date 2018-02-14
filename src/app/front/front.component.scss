@@ -1,0 +1,21 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+
+
+
+  >div {
+    max-width: 320px;
+
+    >img {
+      max-width: 100%;
+    }
+  }
+}
+.margin{
+  margin-right: 15%;
+  margin-left: 15%;
+}
+

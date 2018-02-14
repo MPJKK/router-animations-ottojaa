@@ -1,0 +1,6 @@
+<form>
+  <input type="file" name="file" (change)="setFile($event)">
+  <input [(ngModel)]="media.title" type="text" name="title">
+  <textarea [(ngModel)]="media.description" name="description"></textarea>
+  <button (click)="uploadFile()">Upload</button>
+</form>
